@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'reeceriherd';
+  title = 'personalSite';
+  info = 1;
+  isSticky = false;
+
+  @HostListener('window:scroll', ['$event']) checkScroll() {
+    this.isSticky = window.pageYOffset >= 640;
+  }
 }

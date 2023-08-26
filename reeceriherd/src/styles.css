@@ -1,1 +1,209 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .top-container {
+    background-color: #bf5700;
+    padding: 3%;
+    padding-top: 0;
+    margin:0;
+    text-align: center;
+    background-image: url(./assets/images/utBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    /* text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000; */
+    background-position: top;
+  }
+
+  .popup {
+    position: relative
+  }
+  
+  .header {
+    background: #333f48;
+    background-color: #bf5700;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header a {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .header a:hover {
+    background-color: #b15000;
+    /*box-shadow: 0 0 25px 10px rgba(0,0,0, .25);*/
+    color: white;
+  }
+
+  .header a.active {
+    background-color: white;
+    color: #333f48;
+  }
+
+  .elems {
+    display: flex;
+  }
+  
+  .content {
+    padding: 0;
+    text-align: justify;
+  }
+
+  .external {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+  }
+
+  .content p {
+    text-align: left;
+    font-size: initial;
+    color: #333f48;
+    text-indent: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .content h2 {
+    font-size: xx-large;
+    text-align: center;
+    color: #333f48;
+  }
+
+  .content h3 {
+    font-size: x-large;
+    text-align: center;
+    color: #939799;
+  }
+
+  hr.line {
+    width: 75%;
+    height: 5px;
+    background: #333f48;
+    margin-bottom: none;
+    padding-bottom: none;
+    margin-top: 1%;
+    border-top: 2px solid #333f48;
+    border-radius: 5px;
+  }
+
+  hr.subline {
+    width: 50%;
+    height: 2px;
+    background: #939799;
+    margin-bottom: 0px;
+    border-top: 2px solid #939799;
+    border-radius: 5px;
+  }
+
+
+  .profile {
+    padding: 50px;
+    z-index: 99;
+  }
+
+  .profile img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 25%;
+    min-width: 300px;
+    border-radius: 50%;
+  }
+  
+  .sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  .sticky + #myHeader {
+    padding-top: 88px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align:center;
+    }
+
+    .elems {
+        float: center;
+    }
+}
+
+#AboutMe {
+  scroll-margin-top: 3em;
+}
+
+#Projects {
+  scroll-margin-top: 3em;
+}
+
+#Connect {
+  scroll-margin-top: 3em;
+}
+
+.icons {
+  text-align: center;
+    padding-top: -50px;
+}
+
+footer {
+    text-align: center;
+    font-size: x-large;
+}
+
+.fa {
+  margin: 5%;
+  padding: 20px;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-envelope{
+    background: #bf5700;
+    color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+#DinoJoust {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 500px;
+  min-width: 300px;
+}

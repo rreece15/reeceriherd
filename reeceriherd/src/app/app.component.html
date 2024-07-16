@@ -2,7 +2,7 @@
 	<header>
 		<div class="top-container">
 			<div class="profile">
-				<img src="assets/images/profile.jpg">
+				<img src="assets/images/profile(1).jpg">
 			</div>
 			<h1>Hi, I'm Reece Riherd!</h1>
 		</div>
@@ -10,49 +10,69 @@
 	<div class="header" id="myHeader"
 		[ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
 			<a (click)="info = 1">About Me</a>
-			<a (click)="info = 2">Work Experience</a>
+			<a (click)="info = 2">Work and Research Experience</a>
 			<a (click)="info = 3">Projects and Volunteering</a>
 		</div>
 	<div class ="content">
 		<ng-container *ngIf="info == 1">
 			<h2 id="AboutMe">About Me</h2>
 			<hr class="line">
-			<img src="assets/images/eiffel.jpg" class="support">
+			<img src="assets/images/intro.jpg" class="support" id="intro">
 			<p>    
-				Hi! I am currently a third year student in Computer Engineering at the University of Texas at Austin
-				where I am pursuing a technical core 
-				in Data Science and Information Processing. My coursework thus far has consisted of a bottom-up foundation, where I started by
-				learning the microarchitecture of a computer and how gates and digital logic relate to code. From there, I 
-				gained experience with Assembly Language (namely x86 ARM) through Introduction to Embedded Systems while
-				also gaining experience in C and data structures in Software Design and Implementation I. This past year,
-				I have ventured further into software engineering within Software Design and Implementation II, where I
-				explored more topics relating to data structures and complexity, this time while developing my skills 
-				in Java. Most recently, I have become much more efficient and cognizant of my code in my algorithms class, and, this upcoming semester,
-				I plan to take Operating Systems to learn of process management and file systems.
+				Hi! I am currently a Master's student in Computer Engineering at the University of Texas at Austin
+				where I am pursuing a technical core in Data, Information, and Communications Engineering. Thus far 
+				in my graduate education, I have explored various topics in machine learning like advanced probability, real-world networks, 
+				and unconventional computation, honing my interests and strengths in the field. This past year,
+				I have pursued topics in data science and software engineering more thoroughly, taking advanced graduate coursework in probability, machine learning, and databases. 
+				Most recently, I have become much more efficient and cognizant of my code in my algorithms class, and, this upcoming semester,
+				I plan to take Convex Optimization to learn of efficient resource allocation and dataset analysis and interpretation.
 			</p>
 			<p>
-				In my past education, I attended Heritage High School in Frisco, Texas, where I enrolled AP courses
+				In my past education, I completed my Bachelor's degree in Electrical and Computer Engineering with a concentration in 
+				Data Science and Information Processing at the University of Texas at Austin. My undergrduate education consisted of a bottom-up foundation, 
+				where I started by learning the microarchitecture of a computer and how gates and digital logic relate to code. From there, I 
+				gained experience with Assembly Language (namely x86 ARM) through Introduction to Embedded Systems while
+				also gaining experience in C and data structures in Software Design and Implementation I and II.
+			</p>
+			<p>
+				I attended Heritage High School in Frisco, Texas, where I enrolled AP courses
 				preparing for my college education, eventually earning a title as a National AP scholar. Simultaneously,
 				I also took the Harvardx course CS50x, where I was taught the basics of coding from a variety of perspectives,
 				learning topics such as data analysis, game developement, and data structures in the languages of 
 				C, Python, SQL, and Lua.
 			</p>
 			<p>
-				Among my interests, I am involved in music, baseball, weight lifting, and running. I played bass for my school 
+				Among my interests, I am involved in music, baseball, climbing, and running. I played bass for my school 
 				orchestra in high school, where I participated in Solo&Ensemble and was a member of the regional orchestra.
 				After high school, I have stayed involved by continuing my practice within both electric and standup bass, 
 				in addition to playing and developing my skills in guitar. As for running, I participated in the cross-country
-				team in high school, and I ran the Dallas Half-Marathon in December of 2018. I am proud to be a member of each
+				team in high school, and I ran the Dallas Half-Marathon and the Austin Marathon. I am proud to be a member of each
 				of these communities, and look forward to maintaining my interests!
 			</p>
 		</ng-container>
 		<ng-container *ngIf="info == 2">
 			<h2 id="Projects">Work Experience</h2>
 			<hr class="line">
+			<h3>Goldman Sachs Summer Analyst</h3>
+			<hr class="subline">
+			<img src="assets/images/Goldman_Sachs_logo.png" class="support" id="GS">
+			<p>
+				Within my most recent internship, I am working at Goldman Sachs as an Engineering Summer Analyst in the Reconciliations team of 
+				the controllers division. Here, I am holding my first position in the finance industry, gaining invaluable insight into the ins and outs 
+				of the role of engineering in finance, maintaing the infrastructure, analysis programs, and user interfaces vital to the operation of major firms. 
+				Similarly, I honed my professional experiences, building my network and learning key techniques for creating technical documentation and presentation.
+			</p>
+			<p>
+				For my technical role, I contributed to a full-stack Java application, writing back-end algorithms and APIs to develop a service to automate and optimize 
+				transaction reconciliations. From this perspective, I implemented network engineering concepts, worked with large-scale codebases, and analyzed object-oriented design practices, 
+				in addition to going through team led code reviews to perfect my code. My favorite aspect of this project so far is getting to work with complicated problems in a system processing 
+				billions of transactions in data, yielding a physical and visible impact in the infrastructure of Goldman Sachs' engineering. 
+			</p>
 			<h3>Uber Software Engineering Internship</h3>
 			<hr class="subline">
+			<img src="assets/images/Uber_logo.png" class="support" id="Uber">
 			<p>
-				This past summer, I had my first internship outside of Texas, holding the role of software engineering intern at the Uber office in Sunnyvale, California. This role offered me 
+				In the summer of 2023, I had my first internship outside of Texas, holding the role of software engineering intern at the Uber office in Sunnyvale, California. This role offered me 
 				extensive exposure to strong technological exposure among a strong community.
 			</p>
 			<p>
@@ -65,6 +85,22 @@
 			<p>
 				In addition, I got to explore the Bay Area to have lots of exciting opportunities to learn the area and what it has to offer. Some of my favorites were Sequoia National Park, 
 				Muir Woods, and Carmel by the Sea! Beyond the astounding nature, great food, and rich history that these locations offered, it was great to have a break from the Texas heat!
+			</p>
+			<h3>Texas Venture Labs</h3>
+			<hr class="subline">
+			<img src="assets/images/TVL.jpg" class="support" id="TVL">
+			<p>
+				This upcoming semester, I will also participate as a student in the Texas Venture Labs practicum, acting as an apprentice to learn relevant consulting skills by working 
+				alongside Austin-based startups. Here, I will combine my existing technical knowledge in a cross-disciplinary setting with relevant business strategies, learning vital skills such as 
+				market validation, competitive analysis, financial analysis, and business model assessment. I am super excited for the opportunity to gain a strong foundation in entrepreneurship and to network with upcoming startups! 
+			</p>
+			<h3>University of Texas Graduate Research Assistant</h3>
+			<hr class="subline">
+			<img src="assets/images/utece.png" class="support">
+			<p>
+				I recently started a position as a teaching assistant for ECE 364D, Senior Design, where my responsibilities will include meeting with student teams to both guide them and give advice towards completion 
+				and grade submitted technical deliverables in a wide breadth of topics. I will also continue this role in the fall as a teaching assistant for ECE 464, guiding students to the finalization of their projects 
+				in an end-of-semester capstone showcase. Mentoring students through both technical material and written assignments has been an amazing experience, and I am excited to see the impact that these projects make!
 			</p>
 			<h3>AT&T TDP Software Engineering Internship</h3>
 			<hr class="subline">
@@ -90,6 +126,8 @@
 				Alongside all of this, I got to meet and work alongside some great interns, making great friends and contributing to the community all the while! I especially enjoyed my experiences participating
 				in our Intern Community Day, the numerous tours around the AT&T headquarters campus, and going on excursions to get to know the city that I grew up in even better!
 			</p>
+			<h2 id="Projects">Research Experience</h2>
+			<hr class="line">
 			<h3>Texas Rocket Engineering Lab</h3>
 			<hr class="subline">
 			<img src="assets/images/trel.jpg" id="TREL">
@@ -108,6 +146,7 @@
 			</p>
 			<h3>UT Austin Undergraduate Research Assistant</h3>
 			<hr class="subline">
+			<img src="assets/images/ischool.png" id="ischool">
 			<p>
 				I have also been a part of a lab under Professor Jiabao Li focusing on the visualization of the MAG dataset! This project has given me a much larger depth of understanding into 
 				topics in compuer science that I would otherwise be unacquainted. Specifically, the lab has introduced me to neural networks, visualization libraries within Python, and Docker containers.
